@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.categories{
+    color: black;
+      display: flex;
+       margin-top: 30px;
+  
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 20px ;
+      
+}
+.Top-cartegories{
+    color: black;
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 30px;
+}
+
+.categories-nav{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    font-weight: lighter;
+    font-size: x-large;
+    
+}
+.categories-nav :hover{
+    text-decoration: underline;
+   text-decoration-color: blue;
+   transform: scale(1.2);
+}
+
+/* CAR-CATEGORIES SECTION */
+
+
+.Car-section{
+    padding-top: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.Car-section1{
+
+    position: absolute
+}
+
+.RR-box{
+    margin-top: 90px;
+      
+       width: 80vw;
+       height: 45vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.RR-text{
+    color: white;
+       
+    margin-top: 20px;
+    margin-left: 40px;
+    font-size: xx-large;
+    font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}   
+
+.RR-text button{
+    border-radius: 10px;
+    background:transparent;
+    color: white;
+     font-size: 16px;   
+     padding: 12px 30px;
+    
+}
+
+.RR-text button:active {
+    transform: scale(0.9);
+}
+
+ .CAR-pics{
+       margin-top: 20px;
+       margin-left: 70px;
+    height: 250px;
+    width: 250px;
+    background-color: brown;
+    border-radius: 8px;
+    background: #161C28;
+
+}
+
+.CAR-pics img{
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.car-details {
+  border-style: dotted ;
+  height: 200px;
+}
+
