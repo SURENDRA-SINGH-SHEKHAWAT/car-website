@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.Our-service{
+    text-align: center;
+    color: black ;
+    font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 30px;
+}
+
+.Our-service h1{
+    padding-top: 20px;
+    font-size: 90px;
+}
+
+.car-seat{
+    margin-top: 99px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;  
+}
+
+.car-seatintro h2{
+padding-right: 200px;
+margin-top: 30px;
+font-size: xx-large;
+}
+
+.Our-service .car-seatintro{
+    background:#161C28;
+    width: 30vw;
+    padding-right: 20px;
+     border-radius: 30px;
+     color: white;
+    
+
+}
+
+.car-seatintro p{
+
+    display: flex;
+    margin-left: 30px;
+}
+
+.car-seatintro .btn{
+    
+ align-items: flex-start;
+margin-right: 60px;
+}
+
+
+
+/* CAR_GEAR SECTION */
+
+.Car-gear{
+            
+    padding-right: 30px;
+     text-align: center;
+    color: black ;
+    font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 30px;
+    
+    color: black;
+    margin-top: 99px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.Car-gear h2{
+padding-right: 200px;
+margin-top: 30px;
+font-size: xx-large;
+}
+
+.car-gear-intro{
+     background:#161C28;
+    width: 30vw;
+    padding-right: 20px;
+     border-radius: 30px;
+     color: white;
+     display: inline;
+     justify-content: flex-start;
+    
+}
+
+

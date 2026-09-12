@@ -66,6 +66,10 @@ button{
      transition: 0.3s;   
 }
 
+ button:active {
+    transform: scale(0.9);
+}
+
 .desc2{
     display: flex;
     justify-content: space-between;   
@@ -78,6 +82,11 @@ button{
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
+}
+
+.car-categories :hover{
+    transform: scale(0.9);
+    cursor: pointer;
 }
 
 
