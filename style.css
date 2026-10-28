@@ -1,93 +1,90 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-   
-}
-body {
-    color: white;
-}
-main{
-    background-image: url("./pic/bg.png");
-    height: 850px;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
+body { color: white; overflow-x: hidden; }
 
-header{
+/* Hero wrapper (was the 850px-tall <main> background) */
+.hero {
+    background-image: url("./pic/bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 20px;
+}
+@media (min-width: 993px) { .hero { min-height: 850px; } }
+
+header {
     display: flex;
     justify-content: space-between;
-    
-    
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
-
-header .menubar{
+header .menubar {
     width: 30%;
+    min-width: 280px;
     padding-top: 30px;
     display: flex;
     justify-content: space-evenly;
     padding-right: 50px;
     color: #F0F0F0;
     font-weight: 700;
-    
 }
+header .menubar :hover { text-decoration: underline; transform: scale(1.1); }
 
-header .menubar :hover {
-    text-decoration: underline;
-        transform: scale(1.1);
-}
-
-.desc .adv{
-    
-   font-size: 80px; 
+.desc .adv {
+    font-size: clamp(42px, 9vw, 80px);
     font-weight: 700;
     margin-top: 20px;
     margin-left: 30px;
-font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.desc2 .section1{
+.desc2 { display: flex; justify-content: space-between; gap: 20px; }
+.desc2 .section1 {
     margin-top: 20px;
     margin-left: 30px;
-   
-         font-weight: lighter;
-         width: 500px;
-         font-size: xx-large;
-
+    font-weight: lighter;
+    flex: 0 1 500px;
+    max-width: 500px;
+    font-size: clamp(18px, 3.5vw, 32px);
 }
+.section2 { min-width: 0; }
 
-button{
-     margin: 20px ;
-      padding: 15px 35px;
+button {
+    margin: 20px;
+    padding: 15px 35px;
     background: transparent;
     color: white;
     border: 2px solid white;
     font-size: 18px;
     cursor: pointer;
     margin-top: 90px;
-     transition: 0.3s;   
+    transition: 0.3s;
 }
-
- button:active {
-    transform: scale(0.9);
-}
-
-.desc2{
-    display: flex;
-    justify-content: space-between;   
-}
-
+button:active { transform: scale(0.9); }
 
 /* car categories */
+.car-categories { display: flex; justify-content: space-evenly; }
+.car-categories img { min-width: 0; }
+.car-categories :hover { transform: scale(0.9); cursor: pointer; }
 
-.car-categories{
-    display: flex;
-    justify-content: center;
-    justify-content: space-evenly;
+/* ---------- Mobile ---------- */
+@media (max-width: 768px) {
+    header { flex-direction: column; align-items: center; }
+    header .menubar {
+        width: 100%;
+        padding: 15px 10px;
+        flex-wrap: wrap;
+        gap: 8px 24px;
+    }
+    .desc .adv { margin-left: 0; text-align: center; }
+    .desc2 { flex-direction: column; align-items: center; text-align: center; }
+    .desc2 .section1 { margin-left: 0; padding: 0 20px; flex: none; width: 100%; }
+    button { margin-top: 30px; }
+    .section2 { width: 100%; display: flex; justify-content: center; }
+
+    .car-categories { flex-wrap: wrap; gap: 10px; padding: 0 10px; }
+    .car-categories img { width: calc(33.333% - 10px); }
 }
-
-.car-categories :hover{
-    transform: scale(0.9);
-    cursor: pointer;
+@media (max-width: 480px) {
+    .car-categories img { width: calc(50% - 10px); }
 }
-
-
-

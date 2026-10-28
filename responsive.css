@@ -1,0 +1,115 @@
+/* responsive.css — load LAST, after all your other stylesheets.
+   !important is used because I couldn't see your original CSS files;
+   once you merge these rules in, you can remove it where not needed. */
+
+*, *::before, *::after { box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
+body { overflow-x: hidden; }
+
+/* ---------- Tablet (≤ 992px) ---------- */
+@media (max-width: 992px) {
+  header { padding-left: 20px !important; padding-right: 20px !important; }
+
+  .desc2,
+  .car-seat,
+  .Car-gear { gap: 24px; }
+
+  .car-categories {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 16px;
+  }
+  .car-categories img { width: 30% !important; }
+
+  .RR-box { flex-wrap: wrap !important; }
+}
+
+/* ---------- Mobile (≤ 768px) ---------- */
+@media (max-width: 768px) {
+  /* Header: logo on top, menu wraps below */
+  header {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 12px;
+    height: auto !important;
+    padding: 12px 16px !important;
+  }
+  .menubar {
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 20px;
+    width: 100% !important;
+  }
+
+  /* Hero */
+  .desc { height: auto !important; padding: 24px 16px !important; }
+  .desc2 {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center;
+    width: 100% !important;
+  }
+  .section1, .section2 { width: 100% !important; }
+  .adv p { font-size: clamp(2rem, 9vw, 3rem) !important; }
+
+  /* Category icons */
+  .car-categories img { width: 45% !important; }
+
+  /* Top categories nav */
+  .categories { flex-direction: column !important; align-items: flex-start; }
+  .categories-nav {
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+    width: 100% !important;
+  }
+
+  /* Featured car */
+  .Car-section img[width] { width: 100% !important; }
+  .Car-section1 { position: static !important; width: 100% !important; }
+  .RR-box {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center;
+    width: 100% !important;
+  }
+  .RR-text, .RR-Pic { width: 100% !important; }
+
+  /* Our services + Free support: stack, image first/last sensibly */
+  .car-seat,
+  .Car-gear {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center;
+    width: 100% !important;
+    padding: 0 16px;
+  }
+  .car-seatintro, .car-img,
+  .car-gear-img, .car-gear-intro { width: 100% !important; }
+  .line { margin-left: auto; margin-right: auto; }
+
+  /* Footer */
+  footer {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center;
+    gap: 14px;
+    height: auto !important;
+    padding: 24px 16px !important;
+  }
+  .footer-menu {
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 20px;
+  }
+}
+
+/* ---------- Small phones (≤ 480px) ---------- */
+@media (max-width: 480px) {
+  h1 { font-size: 1.6rem !important; }
+  h2 { font-size: 1.3rem !important; }
+  .car-categories img { width: 70% !important; }
+  button, .btn { width: 100%; max-width: 280px; }
+}
